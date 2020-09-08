@@ -1,0 +1,8 @@
+
+Ksquid:S1604n"(Make this anonymous inner class a lambda(ç÷Ôûÿÿÿÿ8àƒÊÅ¯.
+X"squid:SwitchLastCaseIsDefaultCheckÉ""Add a default case to this switch.(ß´İ8£çÈÅ¯.
+fsquid:S00112È"FDefine and throw a dedicated exception instead of using a generic one.(İ°Äß8£çÈÅ¯.
+Bsquid:S1148±"#Use a logger to log this exception.(Ü˜­8£çÈÅ¯.
+Gsquid:S1604œ"(Make this anonymous inner class a lambda(˜¸á°8àƒÊÅ¯.
+X"squid:SwitchLastCaseIsDefaultCheckŸ""Add a default case to this switch.(êŠ­ï8£çÈÅ¯.
+msquid:S3252Â"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ƒ¼–÷úÿÿÿÿ8Â¨ÉÅ¯.

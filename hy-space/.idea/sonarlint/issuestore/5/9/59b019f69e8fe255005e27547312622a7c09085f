@@ -1,0 +1,12 @@
+
+rsquid:UselessImportCheck"IRemove this unused import 'org.springframework.amqp.core.DirectExchange'.(ìÉÕÀùÿÿÿÿ
+rsquid:UselessImportCheck"IRemove this unused import 'org.springframework.context.annotation.Scope'.(þè®€ÿÿÿÿÿ
+msquid:UselessImportCheck"IRemove this unused import 'org.springframework.amqp.core.BindingBuilder'.(ì›žê
+‰squid:UselessImportCheck	"`Remove this unused import 'org.springframework.amqp.rabbit.connection.CachingConnectionFactory'.(Éñ³Þøÿÿÿÿ
+isquid:UselessImportCheck"@Remove this unused import 'org.springframework.amqp.core.Queue'.(Þ¼·Àùÿÿÿÿ
+lsquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Þ
+fsquid:UselessImportCheck"BRemove this unused import 'org.springframework.amqp.core.Binding'.(ý„ú¾
+†squid:UselessImportCheck"]Remove this unused import 'org.springframework.beans.factory.config.ConfigurableBeanFactory'.(á©³„üÿÿÿÿ
+tsquid:UselessImportCheck
+"PRemove this unused import 'org.springframework.amqp.rabbit.core.RabbitTemplate'.(ŒÏ„¼
+Fsquid:S1068"*Remove this unused "logger" private field.(ò­ð¿ûÿÿÿÿ

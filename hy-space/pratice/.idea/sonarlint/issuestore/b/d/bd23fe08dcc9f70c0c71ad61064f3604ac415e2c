@@ -1,0 +1,6 @@
+
+lsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(É–ÛŒ8­„Ê©®.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(šÞÝçþÿÿÿÿ8Û°Ñ©®.
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(äÛŸ–8Ç€Ï©®.
+Bsquid:S2111"!Use "BigDecimal.valueOf" instead.(Ï…‹°ÿÿÿÿÿ8Ç½Ë©®.

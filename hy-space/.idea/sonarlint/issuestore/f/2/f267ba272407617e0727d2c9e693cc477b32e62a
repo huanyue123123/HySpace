@@ -1,0 +1,10 @@
+
+?squid:S1148y"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+csquid:S00112^"FDefine and throw a dedicated exception instead of using a generic one.(úÍòûÿÿÿÿ
+Vsquid:UselessImportCheck"2Remove this unused import 'java.util.Enumeration'.(»îÜ®
+csquid:S00112k"FDefine and throw a dedicated exception instead of using a generic one.(™èÇ¬şÿÿÿÿ
+_squid:UselessImportCheck";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô
+csquid:S00112K"FDefine and throw a dedicated exception instead of using a generic one.(™ÚùÙüÿÿÿÿ
+T
+squid:S106W"9Replace this use of System.out or System.err by a logger.(çúÆ«ùÿÿÿÿ
+?squid:S1148V"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

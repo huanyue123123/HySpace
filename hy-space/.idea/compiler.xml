@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="space-user-client" />
+        <module name="hy-space" />
+        <module name="space" />
+        <module name="space-page-client" />
+        <module name="space-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="user-manage" target="1.8" />
+      <module name="wj" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="space-page-client" options="-parameters" />
+      <module name="space-server" options="-parameters" />
+      <module name="space-user-client" options="-parameters" />
+      <module name="user-manage" options="-parameters" />
+      <module name="wj" options="-parameters" />
+    </option>
+  </component>
+</project>

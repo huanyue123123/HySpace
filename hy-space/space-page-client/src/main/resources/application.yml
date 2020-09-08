@@ -1,0 +1,40 @@
+
+
+server:
+  port: 8764
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka
+
+
+spring:
+  application:
+    name: page-client
+  rabbitmq:
+    port: 5672
+    username: root
+    password: root
+    host: 127.0.0.1
+    virtual-host: testHost
+  thymeleaf:
+    cache: false
+  profiles:
+    active: dev
+tutorial:
+  client:
+    duration: 10000
+
+devtools:
+  restart:
+  #热部署生效
+  enabled: true
+  #设置重启的目录
+  additional-paths: resources/**,static/**,templates/**
+  #该目录下的内容修改不重启
+  exclude: data/**

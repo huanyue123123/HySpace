@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huanyue.spacepageclient.dao.UserDao">
+
+    <sql id="fieldsSql">
+        id,username,password,name,salt
+    </sql>
+    <resultMap id="ResultMap" type="com.huanyue.spacepageclient.entity.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password" />
+        <result column="name" property="name" />
+        <result column="salt" property="salt" />
+
+    </resultMap>
+    <sql id="tableName">
+        `user`
+    </sql>
+
+    <select id="selectByName" resultMap="ResultMap" parameterType="com.huanyue.spacepageclient.entity.User">
+        SELECT
+            <include refid="fieldsSql"></include>
+        FROM
+            <include refid="tableName"></include>
+        WHERE
+            username = #{username}
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+    </select>
+
+    <select id="queryUserList" resultMap="ResultMap" parameterType="com.huanyue.spacepageclient.entity.User">
+        SELECT
+        <include refid="fieldsSql"></include>
+        FROM
+        <include refid="tableName"></include>
+        WHERE
+        <if test="username != null and username != ''">
+            and username LIKE CONCAT(CONCAT('%',#{username}),'%')
+        </if>
+    </select>
+
+
+</mapper>

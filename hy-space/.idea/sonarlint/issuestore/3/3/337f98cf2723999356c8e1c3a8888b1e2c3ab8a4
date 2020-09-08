@@ -1,0 +1,5 @@
+
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ô©¸
+squid:UselessImportCheck"VRemove this unused import 'org.springframework.data.redis.connection.ConnectionUtils'.(£®Ã§ıÿÿÿÿ
+Psquid:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ò”®ª

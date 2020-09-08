@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b09f7a3-2d22-4636-a021-0dda018ed325" name="Default Changelist" comment="李鑫&#10;         模糊查询和分页功能">
+      <change afterPath="$PROJECT_DIR$/../../Html5Hello/.idea/Html5Hello.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pratice/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FileManager/space-vue/src/components/homepage/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../FileManager/space-vue/src/components/homepage/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/9/6/963d19555c4fd16d9dd88c62367c7fa9c73f904b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/a/1/a1abf30208d766c6296604367bbdcc327f399eb3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/123.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pratice/123.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pratice/pratice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pratice/pratice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pratice/src/123.html" beforeDir="false" afterPath="$PROJECT_DIR$/pratice/src/123.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-server/src/main/java/com/huanyue/spaceserver/SpaceServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-server/src/main/java/com/huanyue/spaceserver/SpaceServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/task/SchedulerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/task/SchedulerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-system/vue-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html5Hello/hello/hello.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/config/TestRabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/config/TestRabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/controller/FeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/controller/FeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/service/TestRecevier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/service/TestRecevier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/service/TestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/feign-hi/src/main/java/com/cloud/feignhi/service/TestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/turbine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/turbine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/turbine/src/main/java/com/cloud/turbine/TurbineApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/turbine/src/main/java/com/cloud/turbine/TurbineApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cloudProject/maincloud/turbine/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cloudProject/maincloud/turbine/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="mapper" />
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\source\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cmqla9h9pi7zj9RZV38sHTwotI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dynamic.classpath" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15039062" />
+    <property name="project.structure.side.proportion" value="0.44252872" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static\css" />
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git-repos\HySpace\hy-space\pratice\src" />
+      <recent name="E:\git-repos\HySpace\hy-space\pratice\src\css" />
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\java\com\huanyue\spacepageclient" />
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources" />
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.huanyue.spacepageclient.entity" />
+      <recent name="" />
+      <recent name="com.huanyue.usermanage.entity" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.huanyue.spaceserver" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpaceUserClientApplication">
+    <configuration name="CsvToJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CsvToJson" />
+      <module name="pratice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GgcsData (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.huanyue.spacepageclient.entity.GgcsData" />
+      <module name="space-user-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huanyue.spacepageclient.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GgcsData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GgcsData" />
+      <module name="pratice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KAGgcsData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KAGgcsData" />
+      <module name="pratice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.huanyue.spacepageclient.controller.UserController" />
+      <module name="space-user-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huanyue.spacepageclient.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
+      <method v="2" />
+    </configuration>
+    <configuration name="SpacePageClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="space-page-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spacepageclient.SpacePageClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpaceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="space-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spaceserver.SpaceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpaceUserClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="space-user-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spacepageclient.SpaceUserClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.KAGgcsData" />
+      <item itemvalue="Application.CsvToJson" />
+      <item itemvalue="Application.GgcsData" />
+      <item itemvalue="Application.GgcsData (1)" />
+      <item itemvalue="Application.UserController" />
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="Spring Boot.SpaceServerApplication" />
+      <item itemvalue="Spring Boot.SpaceUserClientApplication" />
+      <item itemvalue="Spring Boot.SpacePageClientApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserController" />
+        <item itemvalue="Application.GgcsData (1)" />
+        <item itemvalue="Application.GgcsData" />
+        <item itemvalue="Application.CsvToJson" />
+        <item itemvalue="Application.KAGgcsData" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b09f7a3-2d22-4636-a021-0dda018ed325" name="Default Changelist" comment="" />
+      <created>1591144268037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591144268037</updated>
+      <workItem from="1591144271303" duration="1458000" />
+      <workItem from="1591147762198" duration="2372000" />
+      <workItem from="1591170044307" duration="5075000" />
+      <workItem from="1591233914005" duration="7851000" />
+      <workItem from="1591317347904" duration="20137000" />
+      <workItem from="1591573952241" duration="93000" />
+      <workItem from="1591759470745" duration="4041000" />
+      <workItem from="1591770128431" duration="983000" />
+      <workItem from="1591853637591" duration="1680000" />
+      <workItem from="1592353083205" duration="3177000" />
+      <workItem from="1592456822149" duration="1159000" />
+      <workItem from="1592534667506" duration="871000" />
+      <workItem from="1592809158458" duration="856000" />
+      <workItem from="1592889361886" duration="770000" />
+      <workItem from="1592894186577" duration="2445000" />
+      <workItem from="1593308741238" duration="574000" />
+      <workItem from="1593309328611" duration="12140000" />
+      <workItem from="1593330740015" duration="1915000" />
+      <workItem from="1594003721165" duration="4391000" />
+      <workItem from="1594080649341" duration="596000" />
+      <workItem from="1594195411009" duration="1350000" />
+      <workItem from="1594252770369" duration="2612000" />
+      <workItem from="1594950065122" duration="805000" />
+      <workItem from="1595556081050" duration="1753000" />
+      <workItem from="1595559162527" duration="2331000" />
+      <workItem from="1595561624014" duration="2220000" />
+      <workItem from="1595567615759" duration="1310000" />
+      <workItem from="1595568949723" duration="2387000" />
+      <workItem from="1596190513467" duration="1852000" />
+      <workItem from="1597040945919" duration="6707000" />
+      <workItem from="1597103674474" duration="12089000" />
+      <workItem from="1597190051123" duration="4841000" />
+      <workItem from="1597276222134" duration="587000" />
+      <workItem from="1597302425113" duration="4449000" />
+      <workItem from="1597364064571" duration="4331000" />
+      <workItem from="1597452683624" duration="3256000" />
+      <workItem from="1597540069302" duration="672000" />
+      <workItem from="1597645507240" duration="665000" />
+      <workItem from="1597707821256" duration="11032000" />
+      <workItem from="1597806177549" duration="2272000" />
+      <workItem from="1597892270814" duration="3452000" />
+      <workItem from="1597905184011" duration="27000" />
+      <workItem from="1597997221800" duration="3757000" />
+      <workItem from="1598226767876" duration="592000" />
+      <workItem from="1598325115764" duration="3587000" />
+      <workItem from="1598400009553" duration="3503000" />
+      <workItem from="1598487122679" duration="2101000" />
+      <workItem from="1598572419795" duration="1862000" />
+      <workItem from="1598831154628" duration="5287000" />
+      <workItem from="1598920509365" duration="6833000" />
+      <workItem from="1599094337543" duration="2644000" />
+      <workItem from="1599177116893" duration="4988000" />
+      <workItem from="1599436073798" duration="818000" />
+      <workItem from="1599540762321" duration="2214000" />
+      <workItem from="1599555577676" duration="627000" />
+    </task>
+    <task id="LOCAL-00001" summary="李鑫">
+      <created>1591170315943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591170315943</updated>
+    </task>
+    <task id="LOCAL-00002" summary="李鑫">
+      <created>1591173795146</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591173795146</updated>
+    </task>
+    <task id="LOCAL-00003" summary="李鑫">
+      <created>1591173837982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591173837982</updated>
+    </task>
+    <task id="LOCAL-00004" summary="李鑫&#10;模糊查询和分页功能">
+      <created>1591238452366</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591238452366</updated>
+    </task>
+    <task id="LOCAL-00005" summary="李鑫&#10;模糊查询和分页功能">
+      <created>1591241652254</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591241652254</updated>
+    </task>
+    <task id="LOCAL-00006" summary="李鑫&#10;         模糊查询和分页功能">
+      <created>1591327022690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591327022690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="李鑫&#10;      上传项目">
+      <created>1595570190097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595570190097</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="李鑫" />
+    <MESSAGE value="李鑫&#10;模糊查询和分页功能" />
+    <MESSAGE value="李鑫&#10;         模糊查询和分页功能" />
+    <MESSAGE value="李鑫&#10;      上传项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="李鑫&#10;      上传项目" />
+  </component>
+</project>

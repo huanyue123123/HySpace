@@ -1,0 +1,7 @@
+
+Xsquid:S1854"<Remove this useless assignment to local variable "username".(ÿ¾¤¨şÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ—ë
+msquid:S2068 "V'password' detected in this expression, review this potentially hard-coded credential.(¿Ìàø
+msquid:S2068#"Q'Pwd' detected in this expression, review this potentially hard-coded credential.(­ â¢úÿÿÿÿ
+Isquid:S1481"-Remove this unused "username" local variable.(ÿ¾¤¨şÿÿÿÿ

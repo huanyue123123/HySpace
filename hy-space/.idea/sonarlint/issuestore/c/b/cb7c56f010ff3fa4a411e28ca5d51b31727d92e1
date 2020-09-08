@@ -1,0 +1,12 @@
+
+usquid:UselessImportCheck"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ
+`squid:S25837"DChange this condition so that it does not always evaluate to "false"(¬ àõıÿÿÿÿ
+^squid:S00112X"FDefine and throw a dedicated exception instead of using a generic one.(ßÔİÊ
+]squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ğåğe
+^squid:S001123"FDefine and throw a dedicated exception instead of using a generic one.(ŞÍœ
+^squid:S00112@"FDefine and throw a dedicated exception instead of using a generic one.(ôÏÆİ
+Lsquid:S1191"5Use classes from the Java API instead of Sun classes.(ëŞï®
+Wsquid:UselessImportCheck"3Remove this unused import 'sun.misc.BASE64Encoder'.(ëŞï®
+fsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…
+csquid:S00112'"FDefine and throw a dedicated exception instead of using a generic one.(ÚÿÌºüÿÿÿÿ
+^squid:S00112J"FDefine and throw a dedicated exception instead of using a generic one.(ïË‚½

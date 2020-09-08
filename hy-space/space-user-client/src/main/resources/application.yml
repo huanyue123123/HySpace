@@ -1,0 +1,33 @@
+
+
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka
+
+
+spring:
+  application:
+    name: user-client
+  profiles:
+    active: dev
+  rabbitmq:
+    port: 5672
+    username: root
+    password: root
+    host: 127.0.0.1
+    virtual-host: testHost
+tutorial:
+  client:
+    duration: 10000
+
+
+apiPath:
+  /api

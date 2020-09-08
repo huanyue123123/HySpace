@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XIN
+    username: XIN
+    password: root
+
+mybatis:
+  mapper-locations: classpath:orclMapper/*Mapper.xml
+  type-aliases-package: com.huanyue.spaceuserclient.entity
+
+logging:
+  level:
+    com:
+      huanyue:
+        spaceuserclient:
+          dao: debug

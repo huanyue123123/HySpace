@@ -1,0 +1,31 @@
+
+jsquid:S00112r"FDefine and throw a dedicated exception instead of using a generic one.(±ÆÙÿÿÿÿÿ8×è§.
+isquid:S2259†"EA "NullPointerException" could be thrown; "methode" is nullable here.(íÛÌñıÿÿÿÿ8×è§.
+V
+squid:S106K"9Replace this use of System.out or System.err by a logger.(ö¬8×è§.
+Wsquid:UselessImportCheck"4Remove this unused import 'com.gm.wj.result.Result'.(æ³é,
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(½’–ğşÿÿÿÿ8×è§.
+Lsquid:S1481y")Remove this unused "type" local variable.(Ï¼ìıÿÿÿÿ8×è§.
+esquid:S00112&"FDefine and throw a dedicated exception instead of using a generic one.(±à‚8×è§.
+[
+squid:S1066"9Replace this use of System.out or System.err by a logger.(®““Çøÿÿÿÿ8×è§.
+hsquid:UselessImportCheck"=Remove this unused import 'io.lettuce.core.ScriptOutputType'.(˜á‡Ó8ÖÃ‚è§.
+V
+squid:S1068"9Replace this use of System.out or System.err by a logger.(­‘ŸÓ8×è§.
+O
+squid:S106J"9Replace this use of System.out or System.err by a logger.(¸®Œë
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(‹ûÆÿÿÿÿÿ8×è§.
+dsquid:S00112U"FDefine and throw a dedicated exception instead of using a generic one.(ìÑ¤8×è§.
+osquid:UselessImportCheck"?Remove this unused import 'org.aspectj.lang.annotation.Around'.(ï°Œşûÿÿÿÿ8×è§.
+¤squid:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Üœšèıÿÿÿÿ8×è§.
+V
+squid:S106+"9Replace this use of System.out or System.err by a logger.(šÕ­•8×è§.
+V
+squid:S1061"9Replace this use of System.out or System.err by a logger.(‘å÷Œ8×è§.
+[
+squid:S1064"9Replace this use of System.out or System.err by a logger.(ì›è‹øÿÿÿÿ8×è§.
+Asquid:S1148?"#Use a logger to log this exception.(Ç’Çê8×è§.
+[
+squid:S106/"9Replace this use of System.out or System.err by a logger.(ßâ™ğşÿÿÿÿ8×è§.

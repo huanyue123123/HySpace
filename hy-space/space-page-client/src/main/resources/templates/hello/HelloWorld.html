@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloWorld</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src = "js/vue.js" type="application/javascript" ></script>
+</head>
+<body>
+<div id = "app" ref="getheight">
+    {{ message }}
+    <p v-bind:title="message" v-on:click = "seenFalse">
+        鼠标悬停在这里
+    </p>
+    <p v-if = "seen">
+        你看不到我
+    </p>
+    <ol>
+        <li v-for = "obj in objs">
+            {{obj.text}}
+        </li>
+
+    </ol>
+    <button v-on:click = "reverseMsg">反转</button>
+    <input v-model = "message"/>
+    <ol>
+        <todo-item v-for="item in groceryList"
+                   v-bind:obj="item"
+                   v-bind:key="item.id"></todo-item>
+    </ol>
+    <h1>{{ a }}</h1>
+    <span v-once>不会改变的值:{{ info }}</span>
+    <h3>html:<span v-html="rawHtml" ></span></h3>
+    <div v-bind:id = "bindId">绑定ID</div>
+    <button :disabled="isButtonDisabled">Button</button>
+    {{ isButtonDisabled?"OK":"NO"  }}
+    <input @[eventname] = "reverseMsg">
+    <p>{{ revesMsg }}</p>
+    <p>{{ getDate() }}</p>
+    <p>{{ fullName }}</p>
+    firstName:<input v-model="firstName" >
+    <br>
+    lastName:<input v-model="lastName" >
+    <br>
+    <template v-if="loginType === 'username' ">
+        <label>UserName</label>
+        <input placeholder="用户名" key = "username-input">
+    </template>
+    <template v-else>
+        <label>Email</label>
+        <input placeholder="邮箱" key = "email-input">
+    </template>
+    <button @click="toggleType">切换登录方式</button>
+    <ol>
+       <li v-for = "(value,name,index) in object">
+           {{name}}--{{value}}--{{index}}
+       </li>
+    </ol>
+
+    <ul>
+        <li v-for = "item in operList">
+            {{item}}
+        </li>
+    </ul>
+    <button @click = "push">push</button>
+    <button @click = "pop">pop</button>
+    <button @click = "shift">shift</button>
+    <button @click = "unshift">unshift</button>
+    <button @click = "splice">splice</button>
+    <button @click = "sort">sort</button>
+    <button @click = "reverse">reverse</button>
+    <button @click = "filter">filter</button>
+    <button @click = "concat">concat</button>
+    <button @click = "slice">slice</button>
+
+</div>
+
+
+
+
+
+<script>
+    Vue.component('todo-item',{
+        props:['obj'],
+        template:'<li>{{ obj.text }}</li>'
+    })
+
+    var app = new Vue({
+        el:"#app",
+        data:{
+            message:"m阿萨大sg" + new Date().toLocaleString() ,
+            seen:false,
+            objs:[
+                {"text":"这样"},
+                {"text":"再这样"},
+                {"text":"最后这样"}
+            ],
+            groceryList: [
+                { id: 0, text: '蔬菜' },
+                { id: 1, text: '奶酪' },
+                { id: 2, text: '随便其它什么人吃的东西' }
+            ],
+            a:123456,
+            info:'废弃',
+            rawHtml:'<a href="http://www.baidu.com">百度一下</a>',
+            bindId:'test',
+            isButtonDisabled:true,
+            eventname:"focus",
+            firstName:"fir",
+            lastName:"last",
+            loginType:'username',
+            object:{
+                "轿车":1000,
+                "货车":5000
+            },
+            operList:[
+                1,4,7,2,5,8,3,6,9
+            ]
+        },
+        created: function () {
+            // `this` 指向 vm 实例
+            console.log('a is: ' + this.a)
+        },
+        computed:{
+            revesMsg:function(){
+                return this.rawHtml.split('').reverse().join('')
+            },
+            fullName:function () {
+              return this.firstName + this.lastName
+            }
+        },
+        methods:{
+            seenFalse:function(){
+                this.seen = true
+                this.a = 123
+                this.info = '大大'
+            },
+            reverseMsg:function () {
+                this.message = this.message.split('').reverse().join('')
+                console.log("height:" + this.$refs.getheight.offsetHeight)
+            },
+            getDate:function(){
+                return new Date().toLocaleString()
+            },
+            toggleType:function(){
+                this.loginType === "username"?this.loginType = "email":this.loginType = "username";
+            },
+            push:function(){
+                this.operList.push(10);
+            },
+            pop:function(){
+                this.operList.pop();
+            },
+            shift:function () {
+                this.operList.shift();
+            },
+            unshift:function(){
+                this.operList.unshift(77);
+            },
+            splice:function () {
+                this.operList.splice(0,5,100);
+            },
+            sort:function () {
+                this.operList.sort(function (a, b) { return a-b });
+            },
+            reverse:function () {
+                this.operList.reverse();
+            },
+            filter:function(){
+                this.operList = this.operList.filter(function (value) {
+                    return value % 2 === 0
+                })
+            },
+            concat:function(){
+                this.operList = this.operList.concat([400,800,1200])
+            },
+            slice:function(){
+                this.operList = this.operList.slice(0,4)
+            }
+
+        }
+    })
+    app.message = "快使用双截棍"
+    app.$watch('a', function (newValue, oldValue) {
+        console.log(oldValue + "-" + newValue)
+    })
+
+</script>
+</body>
+</html>
