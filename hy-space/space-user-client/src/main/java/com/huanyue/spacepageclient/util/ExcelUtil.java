@@ -101,32 +101,7 @@ public class ExcelUtil {
     }
 
     public static void main(String[] args) {
-        Map<String,List<Map<String,String>>> maps = readExcel("C:\\Users\\Administrator\\Desktop\\文档\\ZCFH_DATA.xlsx");
-        List<Map<String,String>> ka = maps.get("KA");
-        for(Map<String,String> mp:ka){
-            String value = mp.get("jyxm_maxValue");
-            String[]arr = value.split(";");
-            for(String group:arr){
-                System.out.println(group);
-                if(group.contains("|")){
-                    String[] h = group.split("\\|");
-                    for(String hs:h){
-                        System.out.println(hs);
-                    }
-                }
-                if(group.contains("&")){
-                    String[] q = group.split("&");
-                    for(String qs:q){
-                        System.out.println(qs);
-                    }
-                }
+        Map<String,List<Map<String,String>>> maps = readExcel("F:\\csv\\zcfh\\ZCFH_JYXM.xlsx");
 
-
-
-            }
-        }
-
-
-        System.out.println(maps.size());
     }
 }

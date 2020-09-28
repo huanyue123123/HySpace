@@ -33,6 +33,33 @@ public class UserController {
         return userService.login(user);
     }
 
+    @PostMapping("/comparedDiff")
+    @ApiOperation(value = "通过csv文件名遍历查找表数据")
+    public Result comparedDiff(String path, HttpServletResponse response) throws IOException {
+        userService.delValidate();
+        Set<String> res = new HashSet<>();
+        File file = new File(path);
+        File[] files = file.listFiles();
+        StringBuffer sb = new StringBuffer();
+        for(File fl:files){
+            String tableName = fl.getName().replaceAll(".csv","");
+            String json = CsvUtil.getJSONFromFile(fl.getAbsolutePath(),",");
+            userService.insertData(json,tableName);
+            List<String> showZcbm = userService.queryZcbm(tableName);
+            List<String> validateZcbm = userService.queryZcbmValidate(tableName);
+            if(showZcbm.removeAll(validateZcbm)){
+                res.addAll(showZcbm);
+            }
+        }
+        StringBuffer stringBuffer = new StringBuffer();
+        for(String r:res){
+            stringBuffer.append("'"+r+"',");
+        }
+
+        return new Result(1,"success",stringBuffer.toString());
+    }
+
+
     @PostMapping("/byCsvZcfh")
     @ApiOperation(value = "通过csv文件名遍历查找表数据")
     public Result byCsvZcfh(String path, HttpServletResponse response) throws IOException {
@@ -93,6 +120,19 @@ public class UserController {
         return new Result(1,"success","");
     }
 
+    @PostMapping("/readExcelInsertData")
+    @ApiOperation(value = "通过csv文件名遍历查找表数据")
+    public Result readExcelInsertData(String path, HttpServletResponse response)  {
+
+        userService.readExcelInsertData(path);
+
+       /* ObjectMapper mapper = new ObjectMapper();
+        GgcsCheckEO[] pp1 = mapper.readValue(json, GgcsCheckEO[].class);
+        List<GgcsCheckEO> data = new ArrayList<>(Arrays.asList(pp1));
+        System.out.println(data.size());*/
+
+        return new Result(1,"success","");
+    }
 
     @PostMapping("/byCsvYcjc")
     @ApiOperation(value = "通过csv文件名遍历查找表数据")
@@ -232,9 +272,16 @@ public class UserController {
 
 
     public static void main(String [] args){
-        String se = "private static String zn = \"[{\"cxlb\":\"汽车\",\"cx\":\"汽车\",\"qttj1\":\"zhj\",\"qttj2\":\"二轴组\",\"jyxm\":\"zhh\",\"jyxm_value\":\"≦11500\",\"qttj1_maxValue\":\"<1000\",\"qttj2_maxValue\":\"2\",\"qttj2_minValue\":\"2\",\"status\":\"1\",\"dw\":\"kg\",\"bz\":\"GB1589\"},{\"cxlb\":\"汽车\",\"cx\":\"汽车\",\"qttj1\":\"zhj\",\"qttj2\":\"二轴组\",\"jyxm\":\"zhh\",\"jyxm_value\":\"≦16000\",\"qttj1_maxValue\":\"<1300\",\"qttj1_minValue\":\"≧1000\",\"qttj2_maxValue\":\"2\",\"qttj2_minValue\":\"2\",\"status\":\"1\",\"dw\":\"kg\",\"bz\":\"GB1589\"},{\"qttj1\":\"zhj\",\"qttj2\":\"二轴组\",\"jyxm\":\"zhh\",\"jyxm_value\":\"≦18000\",\"qttj1_maxValue\":\"<1800\",\"qttj1_minValue\":\"≧1300\",\"dw\":\"kg\",\"bz\":\"GB1589\"},{\"qttj1\":\"hxc\",\"chang\":\"≦12000\",\"kuan\":\"≦2550\",\"gao\":\"≦4000\",\"qttj1_maxValue\":\"<8000\",\"dw\":\"mm\",\"bz\":\"GB1589\"},{\"qttj1\":\"hxc\",\"chang\":\"≦12000\",\"kuan\":\"≦2550\",\"gao\":\"≦4000\",\"qttj1_maxValue\":\"<8000\",\"dw\":\"mm\",\"bz\":\"GB1589\"}]\"; \n";
-
-        System.out.println(se.replaceAll("\\\"","\\\\\""));
+        List<String> list1 = new ArrayList<>(Arrays.asList("KA,KB".split(",")));
+        List<String> list2 = new ArrayList<>(Arrays.asList("KA,KC".split(",")));
+        if(list1.removeAll(list2)){
+            for(String l1:list1){
+                System.out.println(l1);
+            }
+            for(String l2:list2){
+                System.out.println(l2);
+            }
+        }
     }
 
     public static String getMapList(List<Map<String,Object>> mapList) {

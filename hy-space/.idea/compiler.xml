@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="space-user-client" />
-        <module name="hy-space" />
-        <module name="space" />
         <module name="space-page-client" />
+        <module name="space" />
+        <module name="hy-space" />
         <module name="space-server" />
       </profile>
     </annotationProcessing>
