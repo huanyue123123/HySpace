@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b09f7a3-2d22-4636-a021-0dda018ed325" name="Default Changelist" comment="李鑫&#10;         模糊查询和分页功能">
-      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/RedisContriller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3b09f7a3-2d22-4636-a021-0dda018ed325" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pratice/GgcsData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pratice/KAGgcsData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pratice/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pratice/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pratice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pratice/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pratice/src/GgcsData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pratice/src/KAGgcsData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/BackNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/BdAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/CsvToJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/FileT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/GgcsCheckEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/GgcsEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/GgcsStr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/HelloWorld$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/HelloWorld$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/LetterAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/SqlT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/SwingTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pratice/TypeCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/space-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/space-user-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/RedisContriller.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/RedisContriller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/dao/orcl/TestUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/dao/orcl/TestUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/entity/GgcsCheckEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/entity/GgcsData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/entity/YcjcEO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/ExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/resources/orclMapper/TestUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/orclMapper/TestUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/home/AppIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/home/AppIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/library/Books.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/library/Books.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,14 +94,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/git-repos/wj" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.44252872" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -187,6 +205,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WjApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wj" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gm.wj.WjApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CsvToJson" />
       <item itemvalue="Application.GgcsData" />
@@ -197,6 +222,7 @@
       <item itemvalue="Spring Boot.SpaceServerApplication" />
       <item itemvalue="Spring Boot.SpaceUserClientApplication" />
       <item itemvalue="Spring Boot.SpacePageClientApplication" />
+      <item itemvalue="Spring Boot.WjApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -281,7 +307,15 @@
       <workItem from="1600040273737" duration="11809000" />
       <workItem from="1600129651176" duration="4939000" />
       <workItem from="1600214148645" duration="7480000" />
-      <workItem from="1601260222742" duration="3018000" />
+      <workItem from="1601260222742" duration="3212000" />
+      <workItem from="1601263469031" duration="72000" />
+      <workItem from="1601263927210" duration="2959000" />
+      <workItem from="1602292917307" duration="7350000" />
+      <workItem from="1602314079677" duration="1573000" />
+      <workItem from="1602461111611" duration="941000" />
+      <workItem from="1602466845639" duration="786000" />
+      <workItem from="1602467775623" duration="2021000" />
+      <workItem from="1602480299778" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="李鑫">
       <created>1591170315943</created>
@@ -339,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600040466308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="李鑫&#10;       redis部分功能">
+      <created>1601263286827</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601263286827</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,77 +406,98 @@
     <MESSAGE value="李鑫&#10;         模糊查询和分页功能" />
     <MESSAGE value="李鑫&#10;      上传项目" />
     <MESSAGE value="李鑫&#10;Excel读取工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="李鑫&#10;Excel读取工具类" />
+    <MESSAGE value="李鑫&#10;       redis部分功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="李鑫&#10;       redis部分功能" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="624" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601260930848">
+    <state x="624" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602467210327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601260930848" />
-    <state x="392" y="0" key="CommitChangelistDialog2" timestamp="1600218020551">
+    <state x="624" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602467210327" />
+    <state x="641" y="214" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1602485952608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="392" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600218020551" />
+    <state x="641" y="214" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602485952608" />
+    <state x="392" y="0" key="CommitChangelistDialog2" timestamp="1601263284152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="392" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601263284152" />
     <state width="528" height="574" key="DebuggerActiveHint" timestamp="1600138714103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="528" height="574" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1600138714103" />
-    <state x="687" y="214" key="FileChooserDialogImpl" timestamp="1600223585418">
+    <state x="687" y="214" key="FileChooserDialogImpl" timestamp="1602486042127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="214" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600223585418" />
-    <state width="1865" height="593" key="GridCell.Tab.0.bottom" timestamp="1601263029808">
+    <state x="687" y="214" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602486042127" />
+    <state width="1865" height="389" key="GridCell.Tab.0.bottom" timestamp="1602462052500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029808" />
-    <state width="1865" height="593" key="GridCell.Tab.0.center" timestamp="1601263029808">
+    <state width="1865" height="389" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052500" />
+    <state width="1865" height="389" key="GridCell.Tab.0.center" timestamp="1602462052500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029808" />
-    <state width="1865" height="593" key="GridCell.Tab.0.left" timestamp="1601263029808">
+    <state width="1865" height="389" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052500" />
+    <state width="1865" height="389" key="GridCell.Tab.0.left" timestamp="1602462052500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029808" />
-    <state width="1865" height="593" key="GridCell.Tab.0.right" timestamp="1601263029808">
+    <state width="1865" height="389" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052500" />
+    <state width="1865" height="389" key="GridCell.Tab.0.right" timestamp="1602462052500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029808" />
-    <state width="1865" height="593" key="GridCell.Tab.1.bottom" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052500" />
+    <state width="1865" height="389" key="GridCell.Tab.1.bottom" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
-    <state width="1865" height="593" key="GridCell.Tab.1.center" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state width="1865" height="389" key="GridCell.Tab.1.center" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
-    <state width="1865" height="593" key="GridCell.Tab.1.left" timestamp="1601263029808">
+    <state width="1865" height="389" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state width="1865" height="389" key="GridCell.Tab.1.left" timestamp="1602462052500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029808" />
-    <state width="1865" height="593" key="GridCell.Tab.1.right" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052500" />
+    <state width="1865" height="389" key="GridCell.Tab.1.right" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
-    <state width="1865" height="593" key="GridCell.Tab.2.bottom" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state width="1865" height="389" key="GridCell.Tab.2.bottom" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
-    <state width="1865" height="593" key="GridCell.Tab.2.center" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state width="1865" height="389" key="GridCell.Tab.2.center" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
-    <state width="1865" height="593" key="GridCell.Tab.2.left" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state width="1865" height="389" key="GridCell.Tab.2.left" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
-    <state width="1865" height="593" key="GridCell.Tab.2.right" timestamp="1601263029809">
+    <state width="1865" height="389" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state width="1865" height="389" key="GridCell.Tab.2.right" timestamp="1602462052501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="593" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263029809" />
+    <state width="1865" height="389" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602462052501" />
+    <state x="374" y="89" key="Maven.ArtifactSearchDialog" timestamp="1602486295282">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="374" y="89" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602486295282" />
+    <state x="509" y="154" key="NewModule_or_Project.wizard" timestamp="1602480378292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="509" y="154" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1602480378292" />
+    <state x="329" y="0" key="SettingsEditor" timestamp="1602485959386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="329" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602485959386" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1600058663431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600058663431" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602294582136">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602294582136" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600047645092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

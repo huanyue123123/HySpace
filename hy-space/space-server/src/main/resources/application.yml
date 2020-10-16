@@ -16,3 +16,5 @@ eureka:
 spring:
   application:
     name: space-server
+  freemarker:
+    prefer-file-system-access: false

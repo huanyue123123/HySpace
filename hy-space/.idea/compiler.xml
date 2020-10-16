@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="space-user-client" />
-        <module name="space-page-client" />
-        <module name="space" />
         <module name="hy-space" />
+        <module name="space" />
         <module name="space-server" />
+        <module name="space-page-client" />
+        <module name="wj" />
+        <module name="space-user-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="user-manage" target="1.8" />
-      <module name="wj" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

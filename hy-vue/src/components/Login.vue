@@ -47,125 +47,118 @@
 export default {
   name: 'Login',
   data () {
-    var checkUser = (rule,value,callback) => {
+    var checkUser = (rule, value, callback) => {
       if (!value) {
-        return callback(new Error('账号不能为空'));
+        return callback(new Error('账号不能为空'))
       }
-      var regUser = /^[a-zA-Z][a-zA-Z0-9]{4,13}[a-zA-Z]$/;
-      if(!regUser.test(value)){
-        return callback(new Error('账号开头结尾必须为字母且长度6-15'));
+      var regUser = /^[a-zA-Z][a-zA-Z0-9]{4,13}[a-zA-Z]$/
+      if (!regUser.test(value)) {
+        return callback(new Error('账号开头结尾必须为字母且长度6-15'))
       }
-      callback();
-
-    };
-    var checkPwd = (rule,value,callback) => {
+      callback()
+    }
+    var checkPwd = (rule, value, callback) => {
       if (!value) {
-        return callback(new Error('密码不能为空'));
+        return callback(new Error('密码不能为空'))
       }
-      var regPwd = /^[a-zA-Z][a-zA-Z0-9]{5,14}$/;
-      if(!regPwd.test(value)){
-        return callback(new Error('密码以字母开头长度6-15，且不包含特殊符号'));
+      var regPwd = /^[a-zA-Z][a-zA-Z0-9]{5,14}$/
+      if (!regPwd.test(value)) {
+        return callback(new Error('密码以字母开头长度6-15，且不包含特殊符号'))
       }
-      callback();
-    };
-    var checkVerify = (rule,value,callback) => {
+      callback()
+    }
+    var checkVerify = (rule, value, callback) => {
       if (!value) {
-        return callback(new Error('验证码'));
+        return callback(new Error('验证码'))
       }
-      var regPwd = /^[a-zA-Z0-9]{4}$/;
-      if(!regPwd.test(value)){
-        return callback(new Error('验证码格式有误'));
+      var regPwd = /^[a-zA-Z0-9]{4}$/
+      if (!regPwd.test(value)) {
+        return callback(new Error('验证码格式有误'))
       }
-      let data = new FormData();
-      data.append('verify',value);
-      data.append('uuid',this.uuid);
+      let data = new FormData()
+      data.append('verify', value)
+      data.append('uuid', this.uuid)
       this.$axios
         .post('/login/checkVerify', data)
         .then(successResponse => {
-
-          if(successResponse.data.code === 200){
-            callback();
-          }else if(successResponse.data.code === 400){
-            return callback(new Error('验证码不正确'));
-          }else{
-            this.refreshCode();
-            return callback(new Error('验证码过期，请重新输入'));
+          if (successResponse.data.code === 200) {
+            callback()
+          } else if (successResponse.data.code === 400) {
+            return callback(new Error('验证码不正确'))
+          } else {
+            this.refreshCode()
+            return callback(new Error('验证码过期，请重新输入'))
           }
         })
         .catch(failResponse => {
         })
-
-
-    };
+    }
 
     return {
       loginForm: {
         username: '',
         password: '',
-        checkCode:''
+        checkCode: ''
       },
-      uuid:"",
-      checkCode:"",
+      uuid: '',
+      checkCode: '',
       rules: {
-        username:[
+        username: [
           { validator: checkUser, trigger: 'blur' }
         ],
-        password:[
+        password: [
           { validator: checkPwd, trigger: 'blur' }
         ],
-        checkCode:[
+        checkCode: [
           { validator: checkVerify, trigger: 'blur' }
         ]
       },
       responseResult: [],
-      inputError:false
+      inputError: false
     }
   },
   methods: {
     login (formName) {
       this.$refs[formName].validate((valid) => {
-        var map = {};
-        map["name"] = "key";
-        map["salt"] = "value";
-        var list  = [];
-        list.push(map);
+        var map = {}
+        map['name'] = 'key'
+        map['salt'] = 'value'
+        var list = []
+        list.push(map)
         if (valid) {
           this.$axios
             .post('/login/login', {
               username: this.loginForm.username,
               password: this.loginForm.password,
-              checkCode:this.loginForm.checkCode
+              checkCode: this.loginForm.checkCode
             })
             .then(successResponse => {
-              console.log(123);
+              console.log(123)
               if (successResponse.data.code === 200) {
-                this.$store.commit('login',successResponse.data.data)
+                this.$store.commit('login', successResponse.data.data)
                 this.$router.replace({path: '/index'})
-              }else if(successResponse.data.code === 400){
-                this.inputError = true;
-                this.refreshCode();
+              } else if (successResponse.data.code === 400) {
+                this.inputError = true
+                this.refreshCode()
               }
             })
             .catch(failResponse => {
             })
         } else {
-
-          console.log('error submit!!');
-          return false;
+          console.log('error submit!!')
+          return false
         }
-      });
-
-
+      })
     },
-    refreshCode(){
+    refreshCode () {
       this.$axios
         .get('/login/createImg', {
 
         })
         .then(successResponse => {
-          if(successResponse.data.code === 200){
-            this.checkCode = successResponse.data.data.base64;
-            this.uuid = successResponse.data.data.uuid;
+          if (successResponse.data.code === 200) {
+            this.checkCode = successResponse.data.data.base64
+            this.uuid = successResponse.data.data.uuid
           }
         })
         .catch(failResponse => {
@@ -178,10 +171,9 @@ export default {
 
       })
       .then(successResponse => {
-
-        if(successResponse.data.code === 200){
-          this.checkCode = successResponse.data.data.base64;
-          this.uuid = successResponse.data.data.uuid;
+        if (successResponse.data.code === 200) {
+          this.checkCode = successResponse.data.data.base64
+          this.uuid = successResponse.data.data.uuid
         }
       })
       .catch(failResponse => {

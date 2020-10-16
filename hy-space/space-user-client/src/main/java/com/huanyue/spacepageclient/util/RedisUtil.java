@@ -109,13 +109,13 @@ public class RedisUtil {
         //1、通过redisTemplate设置值
         String str1 = (String) redisTemplate.boundValueOps(key).get();
 
-        //2、通过BoundValueOperations获取值
+      /*  //2、通过BoundValueOperations获取值
         BoundValueOperations stringKey = redisTemplate.boundValueOps(key);
         String str2 = (String) stringKey.get();
 
         //3、通过ValueOperations获取值
         ValueOperations ops = redisTemplate.opsForValue();
-        String str3 = (String) ops.get(key);
+        String str3 = (String) ops.get(key);*/
         return str1;
     }
 

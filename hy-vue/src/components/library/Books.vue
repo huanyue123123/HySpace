@@ -40,88 +40,85 @@
 
 <script>
 
-  import EditBook from './EditBook'
-  import SearchBar from './SearchBar'
+import EditBook from './EditBook'
+import SearchBar from './SearchBar'
 
-  export default {
-    name: 'Books',
-    components: {EditBook,SearchBar},
-    data () {
-      return {
-        books: [],
-        count:0,
-        pageSize:20,
-        pageNo:1
-      }
+export default {
+  name: 'Books',
+  components: {EditBook, SearchBar},
+  data () {
+    return {
+      books: [],
+      count: 0,
+      pageSize: 20,
+      pageNo: 1
+    }
+  },
+  mounted () {
+    this.loadBooks()
+  },
+  methods: {
+    loadBooks () {
+      this.$axios.post('/books', {pageNo: this.pageNo, pageSize: this.pageSize}).then(result => {
+        if (result.data.code === 200) {
+          this.books = result.data.data.list
+          this.count = result.data.data.count
+        }
+      })
     },
-    mounted(){
-      this.loadBooks();
+    editBook (item) {
+      this.$refs.edit.dialogFormVisible = true
+      this.$axios.post(item.id + '/detail', {}).then(result => {
+        if (result.data.code === 200) {
+          this.$refs.edit.form = result.data.data
+        }
+      })
     },
-    methods:{
-      loadBooks(){
-        this.$axios.post('/books',{pageNo:this.pageNo,pageSize: this.pageSize}).then(result => {
-          if(result.data.code === 200){
-            this.books = result.data.data.list;
-            this.count = result.data.data.count;
-          }
-        })
-      },
-      editBook(item){
-
-        this.$refs.edit.dialogFormVisible = true;
-        this.$axios.post(item.id + '/detail',{}).then(result => {
-            if(result.data.code === 200){
-              this.$refs.edit.form =result.data.data;
-            }
-        })
-
-      },
-      handleCurrentChange: function (pageNo) {
-        this.pageNo = pageNo
-        this.loadBooks()
-      },
-      searchResult () {
-        var _this = this
-        console.log(this.$refs.searchBar.keywords);
-        this.$axios
-          .post('/books', {pageNo:this.pageNo,pageSize: this.pageSize,keywords:this.$refs.searchBar.keywords}).then(resp => {
+    handleCurrentChange: function (pageNo) {
+      this.pageNo = pageNo
+      this.loadBooks()
+    },
+    searchResult () {
+      var _this = this
+      console.log(this.$refs.searchBar.keywords)
+      this.$axios
+        .post('/books', {pageNo: this.pageNo, pageSize: this.pageSize, keywords: this.$refs.searchBar.keywords}).then(resp => {
           if (resp && resp.data.code === 200) {
-
             _this.books = resp.data.data.list
             _this.books = resp.data.data.count
           }
         })
-      },
-      deleteBook (id) {
-        this.$confirm('此操作将永久删除该书籍, 是否继续?', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          type: 'warning'
-        }).then(() => {
-            var ids = [];
-            ids.push(id);
-            this.$axios
-              .post('/deleteByIds/'+ids).then(resp => {
-              if (resp && resp.status === 200) {
-                this.$message({
-                  type: 'info',
-                  message: '已删除'
-                })
-                this.loadBooks()
-              }
-            })
-          }
-        ).catch(() => {
-          this.$message({
-            type: 'info',
-            message: '已取消删除'
+    },
+    deleteBook (id) {
+      this.$confirm('此操作将永久删除该书籍, 是否继续?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        var ids = []
+        ids.push(id)
+        this.$axios
+          .post('/deleteByIds/' + ids).then(resp => {
+            if (resp && resp.status === 200) {
+              this.$message({
+                type: 'info',
+                message: '已删除'
+              })
+              this.loadBooks()
+            }
           })
+      }
+      ).catch(() => {
+        this.$message({
+          type: 'info',
+          message: '已取消删除'
         })
-        // alert(id)
-      },
-
+      })
+      // alert(id)
     }
+
   }
+}
 </script>
 
 <style scoped>

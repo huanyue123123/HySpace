@@ -8,5 +8,4 @@ import java.util.Map;
 @Mapper
 public interface TestUserDao {
 
-    List<Map<String,Object>>  getTestUser();
 }

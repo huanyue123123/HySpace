@@ -1,15 +1,15 @@
 package com.huanyue.spacepageclient.util;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.hssf.usermodel.HSSFDataFormat;
-import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFFormulaEvaluator;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import javax.servlet.ServletOutputStream;
+import java.io.*;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -98,6 +98,33 @@ public class ExcelUtil {
             }
         }
         return value;
+    }
+
+
+    public static String exportExcel(){
+        XSSFWorkbook workbook = null;
+        String path = "F:\\out\\ce.xlsx";
+        try {
+            workbook = new XSSFWorkbook();
+            XSSFSheet sheet = workbook.createSheet();
+            //创建工作表的行
+            XSSFRow row = sheet.createRow(0);//设置第一行，从零开始
+            row.createCell(2).setCellValue("aaaaaaaaaaaa");//第一行第三列为aaaaaaaaaaaa
+            row.createCell(0).setCellValue(new Date());//第一行第一列为日期
+            workbook.setSheetName(0,"sheet的Name");//设置sheet的Name
+            File file = new File(path);
+            if(!file.exists()){
+                file.createNewFile();
+            }
+            FileOutputStream out = new FileOutputStream(file);
+            workbook.write(out);
+            out.flush();
+            out.close();
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return path;
     }
 
     public static void main(String[] args) {
