@@ -4,6 +4,7 @@ import AppIndex from '@/components/home/AppIndex'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
 import Library from '@/components/library/LibraryIndex'
+// eslint-disable-next-line no-unused-vars
 import SideMenu from '../components/library/SideMenu'
 
 Vue.use(Router)

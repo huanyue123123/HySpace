@@ -47,6 +47,7 @@
     <option value="3" group = "group2">3</option>
 </select>
 <input class = "qtcs_input" onclick="c()" type="button" value="dian">
+<p id = "ttt"></p>
 </body>
 </html>
 
@@ -247,4 +248,9 @@
             $(obj).next().hide();
         }
     }
+
+    $(function(){
+        var s = $("#ttt")?.textContent;
+        console.log(s)
+    })
 </script>

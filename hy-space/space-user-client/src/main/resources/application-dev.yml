@@ -21,6 +21,8 @@ spring:
         max-idle: 8
         max-wait: -1ms
         min-idle: 0
+  profiles:
+    active: dev
 mybatis:
   mapper-locations: classpath:orclMapper/*Mapper.xml
   type-aliases-package: com.huanyue.spaceuserclient.entity

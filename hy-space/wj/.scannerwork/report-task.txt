@@ -1,0 +1,6 @@
+projectKey=wj:v1
+serverUrl=http://localhost:9000
+serverVersion=6.6.0.32724
+dashboardUrl=http://localhost:9000/dashboard/index/wj:v1
+ceTaskId=AW7ZwyCgLLBCzhtl4Poi
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AW7ZwyCgLLBCzhtl4Poi
