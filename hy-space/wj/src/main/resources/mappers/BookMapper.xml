@@ -145,14 +145,14 @@
             book
         <where>
             1 = 1
-            <if test="cid != null and cid != 0">
+            <if test='cid != null and cid != "0"'>
                 AND cid = #{cid}
             </if>
         </where>
         ORDER BY
             createDate
         LIMIT
-            ${pageNo - 1} ,#{pageSize}
+            #{pageStartIndex} ,#{pageSize}
 
 
     </select>

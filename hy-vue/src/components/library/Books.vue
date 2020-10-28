@@ -50,7 +50,7 @@ export default {
     return {
       books: [],
       count: 0,
-      pageSize: 20,
+      pageSize: 30,
       pageNo: 1
     }
   },
@@ -61,8 +61,9 @@ export default {
     loadBooks () {
       this.$axios.post('/books', {pageNo: this.pageNo, pageSize: this.pageSize}).then(result => {
         if (result.data.code === 200) {
-          this.books = result.data.data.list
+          this.books = result.data.data
           this.count = result.data.data.count
+          console.log( result.data.data);
         }
       })
     },

@@ -22,8 +22,10 @@
       listByCategory () {
         var _this = this
         var cid = this.$refs.sideMenu.cid
+        var bookPageNo = this.$refs.booksArea.pageNo;
+        var  bookPageSize = this.$refs.booksArea.pageSize;
         var url = '/books'
-        this.$axios.post(url,{"cid":cid}).then(resp => {
+        this.$axios.post(url,{"cid":cid,pageNo: bookPageNo, pageSize: bookPageSize}).then(resp => {
           if (resp && resp.data.code === 200) {
             console.log(resp.data.data);
             _this.$refs.booksArea.books = resp.data.data;

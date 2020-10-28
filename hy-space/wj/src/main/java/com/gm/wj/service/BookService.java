@@ -33,6 +33,7 @@ public class BookService {
     }
 
     public List<Book> bookList(Book book){
+        book.initStartIndex();
         return bookMapper.selectBookListLimit(book);
     }
 

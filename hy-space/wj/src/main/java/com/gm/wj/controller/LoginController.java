@@ -99,25 +99,16 @@ public class LoginController {
         }
     }
 
-    @PostMapping("/getPhoneCode")
+    @PostMapping("/getPhoneCode/{content}")
     @ApiOperation(value = "手机验证码")
-    public Result getPhoneCode(@RequestBody User user) throws Exception {
+    public Result getPhoneCode(@RequestBody User user,@PathVariable String content) throws Exception {
 
         prop.setAimPhone(user.getUsername());
-        prop.setContent("验证码为:"+ SendMessageUtil.getRandomCode(6) );
+        prop.setContent("傻三儿，你的验证码为:"+ SendMessageUtil.getRandomCode(6) + content );
         Integer res  = SendMessageUtil.send(prop);
         return ResultFactory.buildResult(ResultCode.SUCCESS, ""+ res, prop);
     }
 
-    @PostMapping("/getWeather")
-    @ApiOperation(value = "获取天气")
-    public Result getWeather(@RequestParam("place") String place){
-        try {
-            return ResultFactory.buildResult(ResultCode.SUCCESS,"OK",userService.weather(place));
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ResultFactory.buildResult(ResultCode.FAIL,e.getMessage(),"");
-        }
-    }
+
 
 }
