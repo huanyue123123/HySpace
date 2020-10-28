@@ -21,9 +21,9 @@
       return {
         navList: [
           {name: '/index', navItem: '首页'},
-          {name: '/index', navItem: '笔记本'},
+          {name: '/note', navItem: '笔记本'},
           {name: '/library', navItem: '图书馆'},
-          {name: '/index', navItem: '个人中心'}
+          {name: '/user', navItem: '个人中心'}
         ],
         activerouter:'/index',
         cityName:'',

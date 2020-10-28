@@ -4,6 +4,8 @@ import AppIndex from '@/components/home/AppIndex'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
 import Library from '@/components/library/LibraryIndex'
+import Note from '@/components/note/note'
+import User from '@/components/System/user'
 // eslint-disable-next-line no-unused-vars
 import SideMenu from '../components/library/SideMenu'
 
@@ -33,6 +35,21 @@ export default new Router({
           component: Library,
           meta:{
             requireAuth:true
+          }
+        },
+        {
+          path: '/note',
+          name: 'Note',
+          component: Note,
+          meta: {
+            requireAuth: true
+          }
+        }, {
+          path: '/user',
+          name: 'User',
+          component: User,
+          meta: {
+            requireAuth: true
           }
         }
       ]
