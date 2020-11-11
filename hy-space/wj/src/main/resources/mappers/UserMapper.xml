@@ -101,4 +101,40 @@
       username = #{username} AND password = #{password}
     </if>
   </select>
+  <select id="selectUserByUserName" resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM
+    user
+    WHERE
+    1 != 1 OR
+    <if test="username != null ">
+      username = #{username}
+    </if>
+  </select>
+  <select id="selectRoleList" resultType="com.gm.wj.entity.Role" parameterType="java.lang.Integer">
+    SELECT
+        id ,
+        `name` as roleName,
+        name_zh as roleNameZh
+    FROM
+        admin_role
+    <if test="uid !=null">
+      WHERE id IN(SELECT rid FROM admin_user_role WHERE uid = #{uid})
+    </if>
+
+  </select>
+  <select id="selectMenuList" resultType="com.gm.wj.entity.Permissions" parameterType="java.lang.String">
+        SELECT
+            id,path,`name`,name_zh,icon,sort
+        FROM
+            admin_menu
+        <if test="rid != null">
+        WHERE
+            id IN (SELECT mid FROM admin_role_menu WHERE rid = #{rid})
+
+        </if>
+
+
+  </select>
 </mapper>

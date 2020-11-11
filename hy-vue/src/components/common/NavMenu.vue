@@ -34,6 +34,7 @@
     mounted(){
       this.activerouter = window.location.pathname;
       this.getWeather();
+      this.getUserInfo();
     },
 
     methods:{
@@ -56,6 +57,14 @@
 
           }
         })
+      },
+      getUserInfo(){
+        this.$axios.post('/login/getUserInfo').then(resp =>{
+          if (resp && resp.data.code === 200) {
+            console.log("userInfo:"+resp.data.data);
+
+          }
+        });
       }
     }
   }

@@ -11,7 +11,7 @@ import SideMenu from '../components/library/SideMenu'
 
 Vue.use(Router)
 
-export default new Router({
+const router =  new Router({
   mode: 'history',
   routes: [
     {
@@ -55,6 +55,11 @@ export default new Router({
       ]
     },
     {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
       path: '/',
       name: 'Login',
       component: Login
@@ -62,4 +67,25 @@ export default new Router({
 
 
   ]
-})
+});
+
+export default router;
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.requireAuth) { // 判断该路由是否需要登录权限
+    if (sessionStorage.getItem("token")&&sessionStorage.getItem("token") == 'true') { // 判断本地是否存在token
+          next();
+    } else {
+      // 未登录,跳转到登陆页面
+      next({
+        path: '/login'
+      })
+    }
+  } else {
+    if(sessionStorage.getItem("token")&&sessionStorage.getItem("token") == 'true'){
+      next('/index');
+    }else{
+      next();
+    }
+  }
+});

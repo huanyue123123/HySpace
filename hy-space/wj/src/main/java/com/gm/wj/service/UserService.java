@@ -5,6 +5,10 @@ import cn.com.webxml.WeatherWS;
 import cn.com.webxml.WeatherWSSoap;
 import com.gm.wj.dao.UserMapper;
 import com.gm.wj.entity.User;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +21,10 @@ public class UserService {
     private UserMapper userMapper;
 
     public User login(User user){
-        return userMapper.selectUserByEntity(user);
+        Subject subject = SecurityUtils.getSubject();
+        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(user.getUsername(),user.getPassword());
+        subject.login(usernamePasswordToken);
+        return null;
     }
 
     public List<String> weather(String province,String city) throws Exception {

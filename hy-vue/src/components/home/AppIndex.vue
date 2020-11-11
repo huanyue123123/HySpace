@@ -1,6 +1,7 @@
 <template>
-  <div>
-  </div>
+  <el-container>
+    <el-button @click="logout">退出</el-button>
+  </el-container>
 </template>
 
 <script>
@@ -11,6 +12,7 @@ export default {
   },
   methods: {
     logout () {
+      sessionStorage.setItem("token", 'false');
       this.$store.commit('login', {'username': null})
       this.$router.replace({path: '/login'})
     }

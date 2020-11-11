@@ -38,16 +38,24 @@ public class LoginController {
 
     @ApiOperation(value = "登陆")
     @PostMapping(value = "/login")
-    public Result login(@RequestBody User requestUser,HttpServletRequest request) {
+    public Result login(@RequestBody User requestUser,HttpServletRequest request,HttpServletResponse response) {
         if (requestUser != null) {
             User user = userService.login(requestUser);
             if(user != null){
+                request.getSession().setAttribute("userInfo","user");
                 return ResultFactory.buildResult(ResultCode.SUCCESS, "ok",user);
             }
             return ResultFactory.buildResult(ResultCode.FAIL, "账号或密码错误", requestUser);
 
         }
         return ResultFactory.buildResult(ResultCode.FAIL, "参数为空", requestUser);
+    }
+
+    @ApiOperation(value = "获取userInfo")
+    @PostMapping(value = "/getUserInfo")
+    public Result getUserInfo(HttpServletRequest request,HttpServletResponse response) {
+        System.out.println( request.getSession().getAttribute("userInfo"));
+        return ResultFactory.buildResult(ResultCode.SUCCESS, "", request.getSession().getAttribute("userInfo"));
     }
 
     @ApiOperation(value = "注册")

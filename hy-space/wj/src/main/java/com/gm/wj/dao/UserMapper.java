@@ -1,7 +1,11 @@
 package com.gm.wj.dao;
 
+import com.gm.wj.entity.Role;
 import com.gm.wj.entity.User;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Set;
 
 @Repository
 public interface UserMapper {
@@ -18,4 +22,8 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
 
     User selectUserByEntity(User user);
+
+    User selectUserByUserName(String username);
+
+    Set<Role> selectRoleList(Integer uid);
 }

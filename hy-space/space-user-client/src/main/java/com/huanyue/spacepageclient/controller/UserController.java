@@ -6,6 +6,8 @@ import com.huanyue.spacepageclient.entity.Result;
 import com.huanyue.spacepageclient.entity.User;
 import com.huanyue.spacepageclient.service.UserService;
 import com.huanyue.spacepageclient.util.CsvUtil;
+import com.huanyue.spacepageclient.util.ImageUtil;
+import com.huanyue.spacepageclient.util.PdfUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -32,8 +34,22 @@ public class UserController {
         return userService.login(user);
     }
 
+    @GetMapping("/readPdf")
+    @ApiOperation(value = "阅读pdf")
+    public Result readPdf(String path){
+
+        return new Result(1,PdfUtil.getPdfInfo(path));
+
+    }
 
 
+    @GetMapping("/readImg")
+    @ApiOperation(value = "阅读pdf")
+    public Result readImg(String path){
+
+        return new Result(1, ImageUtil.getTextFromImg(path));
+
+    }
 
 
 }

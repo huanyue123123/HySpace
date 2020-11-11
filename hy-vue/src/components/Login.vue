@@ -135,6 +135,7 @@ export default {
             .then(successResponse => {
               console.log(123)
               if (successResponse.data.code === 200) {
+                sessionStorage.setItem("token", 'true');
                 this.$store.commit('login', successResponse.data.data)
                 this.$router.replace({path: '/index'})
               } else if (successResponse.data.code === 400) {
@@ -178,6 +179,7 @@ export default {
       })
       .catch(failResponse => {
       })
+
   }
 }
 

@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3b09f7a3-2d22-4636-a021-0dda018ed325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/application-prd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-page-client/src/main/resources/templates/hello/ttt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/PdfUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/chi_sim.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/configs/api_config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/configs/digits" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/configs/hocr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/eng.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/osd.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/pdf.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/tessdata/pdf.ttx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/entity/Permissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/realm/CustomRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pratice/src/123.html" beforeDir="false" afterPath="$PROJECT_DIR$/pratice/src/123.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pratice/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/pratice/src/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hy-vue/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/TableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wj/src/main/java/com/gm/wj/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wj/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wj/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hy-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/common/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/common/NavMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/home/AppIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/home/AppIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/components/note/note.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/components/note/note.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hy-vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hy-vue/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hy-vue/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +71,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lixin" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
@@ -67,11 +110,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/space-server/src/main/java/com/huanyue/spaceserver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hy-vue" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.44252872" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -80,34 +123,27 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.huanyue.spaceserver" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static\css" />
+      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\HySpace\hy-space\space-server\src\main\java\com\huanyue\spaceserver" />
+      <recent name="E:\workspace\HySpace\hy-space\space-user-client\src\main\resources\tessdata" />
       <recent name="E:\workspace\HySpace\hy-space\space-user-client\src\main\resources" />
+      <recent name="E:\workspace\HySpace\hy-space\space-server\src\main\java\com\huanyue\spaceserver" />
       <recent name="E:\git-repos\HySpace\hy-space\pratice\src" />
       <recent name="E:\git-repos\HySpace\hy-space\pratice\src\css" />
-      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\java\com\huanyue\spacepageclient" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.huanyue.spacepageclient.entity" />
       <recent name="" />
       <recent name="com.huanyue.usermanage.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static\css" />
-      <recent name="E:\git-repos\HySpace\hy-space\space-page-client\src\main\resources\static\js" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.huanyue.spaceserver" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WjApplication">
-    <configuration name="CsvToJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CsvToJson" />
-      <module name="pratice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExcelUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.huanyue.spacepageclient.util.ExcelUtil" />
       <module name="space-user-client" />
@@ -141,6 +177,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.huanyue.spacepageclient.util.ImageUtil" />
+      <module name="space-user-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huanyue.spacepageclient.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.huanyue.spacepageclient.controller.UserController" />
       <module name="space-user-client" />
@@ -157,16 +206,17 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
       <method v="2" />
     </configuration>
-    <configuration name="SpacePageClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="space-page-client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spacepageclient.SpacePageClientApplication" />
+    <configuration name="注册中心" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="space-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spaceserver.SpaceServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpaceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="space-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spaceserver.SpaceServerApplication" />
+    <configuration name="SpacePageClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="space-page-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huanyue.spacepageclient.SpacePageClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,24 +236,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CsvToJson" />
       <item itemvalue="Application.GgcsData" />
       <item itemvalue="Application.GgcsData (1)" />
       <item itemvalue="Application.UserController" />
       <item itemvalue="Application.ExcelUtil" />
+      <item itemvalue="Application.ImageUtil" />
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="Spring Boot.SpaceServerApplication" />
+      <item itemvalue="Spring Boot.注册中心" />
       <item itemvalue="Spring Boot.SpaceUserClientApplication" />
       <item itemvalue="Spring Boot.SpacePageClientApplication" />
       <item itemvalue="Spring Boot.WjApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ImageUtil" />
         <item itemvalue="Application.UserController" />
         <item itemvalue="Application.ExcelUtil" />
         <item itemvalue="Application.GgcsData (1)" />
         <item itemvalue="Application.GgcsData" />
-        <item itemvalue="Application.CsvToJson" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +339,11 @@
       <workItem from="1602466845639" duration="786000" />
       <workItem from="1602467775623" duration="2021000" />
       <workItem from="1602480299778" duration="1738000" />
-      <workItem from="1603783634528" duration="4216000" />
+      <workItem from="1603783634528" duration="4728000" />
+      <workItem from="1603846282505" duration="11768000" />
+      <workItem from="1604374834870" duration="600000" />
+      <workItem from="1604470302739" duration="6644000" />
+      <workItem from="1604539349374" duration="8251000" />
     </task>
     <task id="LOCAL-00001" summary="李鑫">
       <created>1591170315943</created>
@@ -354,7 +408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601263286827</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="李鑫&#10;       集成原vue 项目到cloud">
+      <created>1603788042628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603788042628</updated>
+    </task>
+    <task id="LOCAL-00011" summary="李鑫&#10;   分页bug 导航栏添加天气">
+      <created>1603862789622</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603862789622</updated>
+    </task>
+    <task id="LOCAL-00012" summary="李鑫&#10;   分页bug 导航栏添加天气">
+      <created>1603877797291</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603877797291</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,13 +456,20 @@
     <MESSAGE value="李鑫&#10;      上传项目" />
     <MESSAGE value="李鑫&#10;Excel读取工具类" />
     <MESSAGE value="李鑫&#10;       redis部分功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="李鑫&#10;       redis部分功能" />
+    <MESSAGE value="李鑫&#10;       集成原vue 项目到cloud" />
+    <MESSAGE value="李鑫&#10;   分页bug 导航栏添加天气" />
+    <option name="LAST_COMMIT_MESSAGE" value="李鑫&#10;   分页bug 导航栏添加天气" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="410" y="164" width="1201" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603783828446">
+    <state x="410" y="164" width="1201" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604470586009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="410" y="164" width="1201" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603783828446" />
+    <state x="410" y="164" width="1201" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604470586009" />
+    <state x="574" y="35" key="#com.intellij.ide.util.MemberChooser" timestamp="1604557390678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="35" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604557390678" />
+    <state x="718" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603854320542" />
     <state x="624" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602467210327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -396,90 +478,114 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="641" y="214" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602485952608" />
-    <state x="392" y="0" key="CommitChangelistDialog2" timestamp="1601263284152">
+    <state x="392" y="0" key="CommitChangelistDialog2" timestamp="1603877794470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="392" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601263284152" />
-    <state width="528" height="574" key="DebuggerActiveHint" timestamp="1603786816520">
+    <state x="392" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603877794470" />
+    <state width="528" height="574" key="DebuggerActiveHint" timestamp="1604475089915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="528" height="574" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1603786816520" />
-    <state x="687" y="214" key="FileChooserDialogImpl" timestamp="1603784886168">
+    <state width="528" height="574" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1604475089915" />
+    <state x="687" y="214" key="FileChooserDialogImpl" timestamp="1604539363109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="214" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603784886168" />
-    <state width="1865" height="389" key="GridCell.Tab.0.bottom" timestamp="1603787662576">
+    <state x="687" y="214" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604539363109" />
+    <state width="1865" height="563" key="GridCell.Tab.0.bottom" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.0.center" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.0.left" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.0.right" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.1.bottom" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.1.center" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.1.left" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.1.right" timestamp="1604562481692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604562481692" />
+    <state width="1865" height="563" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.2.bottom" timestamp="1604562481693">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604562481693" />
+    <state width="1865" height="563" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769973" />
+    <state width="1865" height="563" key="GridCell.Tab.2.center" timestamp="1604562481693">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1604562481693" />
+    <state width="1865" height="563" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.2.left" timestamp="1604562481693">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1604562481693" />
+    <state width="1865" height="563" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769972" />
+    <state width="1865" height="563" key="GridCell.Tab.2.right" timestamp="1604562481693">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1865" height="563" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604562481693" />
+    <state width="1865" height="563" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604543769973" />
+    <state x="374" y="89" key="Maven.ArtifactSearchDialog" timestamp="1604473853491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="389" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662576" />
-    <state width="1865" height="389" key="GridCell.Tab.0.center" timestamp="1603787662576">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662576" />
-    <state width="1865" height="389" key="GridCell.Tab.0.left" timestamp="1603787662576">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662576" />
-    <state width="1865" height="389" key="GridCell.Tab.0.right" timestamp="1603787662576">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662576" />
-    <state width="1865" height="389" key="GridCell.Tab.1.bottom" timestamp="1603787705282">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603787705282" />
-    <state width="1865" height="389" key="GridCell.Tab.1.center" timestamp="1603787705282">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603787705282" />
-    <state width="1865" height="389" key="GridCell.Tab.1.left" timestamp="1603787705282">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603787705282" />
-    <state width="1865" height="389" key="GridCell.Tab.1.right" timestamp="1603787705282">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603787705282" />
-    <state width="1865" height="389" key="GridCell.Tab.2.bottom" timestamp="1603787662471">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662471" />
-    <state width="1865" height="389" key="GridCell.Tab.2.center" timestamp="1603787662471">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662471" />
-    <state width="1865" height="389" key="GridCell.Tab.2.left" timestamp="1603787662471">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662471" />
-    <state width="1865" height="389" key="GridCell.Tab.2.right" timestamp="1603787662471">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="389" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603787662471" />
-    <state x="374" y="89" key="Maven.ArtifactSearchDialog" timestamp="1602486295282">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="374" y="89" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602486295282" />
+    <state x="374" y="89" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604473853491" />
     <state x="509" y="154" key="NewModule_or_Project.wizard" timestamp="1602480378292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="509" y="154" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1602480378292" />
-    <state x="329" y="0" key="SettingsEditor" timestamp="1602485959386">
+    <state x="334" y="0" key="SettingsEditor" timestamp="1604477006456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="329" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602485959386" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1600058663431">
+    <state x="334" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604477006456" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1604475089910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600058663431" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1604475089910" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602294582136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602294582136" />
+    <state x="601" y="427" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604476999747">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="601" y="427" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1604476999747" />
+    <state x="609" y="396" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603788057650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="609" y="396" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603788057650" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600047645092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600047645092" />
+    <state x="467" y="397" key="svn.sslCredentialsDialog" timestamp="1604474019879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="467" y="397" key="svn.sslCredentialsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604474019879" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -498,6 +604,11 @@
           <url>file://$PROJECT_DIR$/wj/src/main/java/com/gm/wj/config/ShiroConfig.java</url>
           <line>46</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/space-user-client/src/main/java/com/huanyue/spacepageclient/util/PdfUtil.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class User implements Serializable {
     private Integer id;
@@ -20,6 +21,8 @@ public class User implements Serializable {
     private String salt;
 
     private String checkCode;
+
+    private Set<Role> roles;
 
 
     private static final long serialVersionUID = 1L;
@@ -76,4 +79,11 @@ public class User implements Serializable {
         return serialVersionUID;
     }
 
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
 }
