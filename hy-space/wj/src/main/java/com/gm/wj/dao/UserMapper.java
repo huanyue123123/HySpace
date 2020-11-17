@@ -2,6 +2,7 @@ package com.gm.wj.dao;
 
 import com.gm.wj.entity.Role;
 import com.gm.wj.entity.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -15,7 +16,7 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    User selectByPrimaryKey(Integer id);
+    User selectByPrimaryKey(@Param(value = "id") Integer id);
 
     int updateByPrimaryKeySelective(User record);
 
@@ -23,7 +24,7 @@ public interface UserMapper {
 
     User selectUserByEntity(User user);
 
-    User selectUserByUserName(String username);
+    User selectUserByUserName(@Param(value = "username") String username);
 
-    Set<Role> selectRoleList(Integer uid);
+    Set<Role> selectRoleList(@Param(value = "uid") Integer uid);
 }

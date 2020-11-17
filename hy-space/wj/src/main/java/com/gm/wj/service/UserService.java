@@ -5,9 +5,15 @@ import cn.com.webxml.WeatherWS;
 import cn.com.webxml.WeatherWSSoap;
 import com.gm.wj.dao.UserMapper;
 import com.gm.wj.entity.User;
+import com.gm.wj.exception.CustomException;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.AuthorizationException;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,16 +21,33 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@Slf4j
 public class UserService {
 
     @Autowired
     private UserMapper userMapper;
 
-    public User login(User user){
+    public void login(User user) throws CustomException{
+        if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
+            throw new CustomException("用户名或密码为空！！！");
+        }
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(user.getUsername(),user.getPassword());
-        subject.login(usernamePasswordToken);
-        return null;
+        try {
+            //进行验证，这里可以捕获异常，然后返回对应信息
+            subject.login(usernamePasswordToken);
+//            subject.checkRole("admin");
+//            subject.checkPermissions("query", "add");
+        } catch (UnknownAccountException e) {
+            log.error("用户名不存在！", e);
+            throw new CustomException("用户名不存在！");
+        } catch (AuthenticationException e) {
+            log.error("账号或密码错误！", e);
+            throw new CustomException("账号或密码错误！");
+        } catch (AuthorizationException e) {
+            log.error("没有权限！", e);
+            throw new CustomException("没有权限！");
+        }
     }
 
     public List<String> weather(String province,String city) throws Exception {
