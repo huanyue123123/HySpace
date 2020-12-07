@@ -81,7 +81,6 @@ export default {
     },
     searchResult () {
       var _this = this
-      console.log(this.$refs.searchBar.keywords)
       this.$axios
         .post('/books', {pageNo: this.pageNo, pageSize: this.pageSize, keywords: this.$refs.searchBar.keywords}).then(resp => {
           if (resp && resp.data.code === 200) {

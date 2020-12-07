@@ -30,7 +30,7 @@
             :show-file-list="false"
             :on-success="handleAvatarSuccess"
             :before-upload="beforeAvatarUpload">
-            <img v-if="imageUrl" :src="imageUrl" class="avatar">
+            <img v-if="form.cover" :src="form.cover" class="avatar">
             <i v-else class="el-icon-plus avatar-uploader-icon"></i>
           </el-upload>
           <el-input type="hidden" v-model="form.cover" autocomplete="off" placeholder="图片 URL"></el-input>
@@ -91,7 +91,7 @@
         this.dialogFormVisible = true;
       },
       handleAvatarSuccess(res, file) {
-        this.imageUrl = URL.createObjectURL(file.raw);
+        this.form.cover = URL.createObjectURL(file.raw);
       },
       beforeAvatarUpload(file) {
         const isJPG = file.type === 'image/jpeg'||'image/png';
@@ -152,6 +152,8 @@
           if(res && res.data.code === 200){
             this.dialogFormVisible = false;
             this.$emit('onSubmit')
+          }else{
+            alert(res.message);
           }
         })
 

@@ -5,6 +5,7 @@
       {{item.navItem}}
     </el-menu-item>
     <el-menu-item style="width: 50%;float: right;font-size: 14px;text-align: right" >
+      {{username}}
       {{cityName}}
       {{date}}
       {{weather}}
@@ -28,7 +29,8 @@
         activerouter:'/index',
         cityName:'',
         date:'',
-        weather:''
+        weather:'',
+        username:''
       }
     },
     mounted(){
@@ -43,7 +45,7 @@
       },
       getWeather(){
         this.$axios
-          .post('/menu/getWeather/山西/运城').then(resp => {
+          .post('/menu/getWeather/天津/天津').then(resp => {
           if (resp && resp.data.code === 200) {
             var weatherMsg = resp.data.data;
             if(weatherMsg.length > 0){
@@ -61,8 +63,7 @@
       getUserInfo(){
         this.$axios.post('/login/getUserInfo').then(resp =>{
           if (resp && resp.data.code === 200) {
-            console.log("userInfo:"+resp.data.data);
-
+            this.username = resp.data.data.username;
           }
         });
       }

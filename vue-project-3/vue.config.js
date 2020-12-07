@@ -47,7 +47,7 @@ module.exports = {
     devServer: {
         open: true,
         host: 'localhost',
-        port: 8080,
+        port: 8888,
         https: false,
         hotOnly: false,
         // http 代理配置
@@ -60,6 +60,7 @@ module.exports = {
                 }
             }
         },
+        // eslint-disable-next-line no-unused-vars
         before: (app) => {}
     },
     // 第三方插件配置

@@ -42,7 +42,7 @@ public class LoginController {
     public Result login(@RequestBody User requestUser,HttpServletRequest request,HttpServletResponse response) {
         if (requestUser != null) {
             try{
-                userService.login(requestUser);
+                userService.login(requestUser,request);
                 return ResultFactory.buildResult(ResultCode.SUCCESS,"登陆成功",requestUser);
             }catch (CustomException e){
                 return ResultFactory.buildResult(ResultCode.FAIL, e.getMessage(), requestUser);

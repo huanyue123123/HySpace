@@ -18,6 +18,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Service
@@ -27,7 +28,7 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public void login(User user) throws CustomException{
+    public void login(User user, HttpServletRequest request) throws CustomException{
         if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
             throw new CustomException("用户名或密码为空！！！");
         }
@@ -36,6 +37,9 @@ public class UserService {
         try {
             //进行验证，这里可以捕获异常，然后返回对应信息
             subject.login(usernamePasswordToken);
+            User userInfo = new User();
+            userInfo.setUsername(user.getUsername());
+            request.getSession().setAttribute("userInfo",userInfo);
 //            subject.checkRole("admin");
 //            subject.checkPermissions("query", "add");
         } catch (UnknownAccountException e) {

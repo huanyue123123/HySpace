@@ -23,6 +23,7 @@ import java.util.*;
 @RequestMapping("${apiPath}/user")
 @Api(tags = {"用户"})
 @Slf4j
+@CrossOrigin(origins = "http://localhost:8888",maxAge = 3600)
 public class UserController {
 
     @Autowired
@@ -51,5 +52,12 @@ public class UserController {
 
     }
 
+    @GetMapping("/text")
+    @ApiOperation(value = "阅读pdf")
+    public Result text(String path){
+
+        return new Result(1, "HelloWorld");
+
+    }
 
 }

@@ -8,6 +8,9 @@ import com.gm.wj.result.ResultFactory;
 import com.gm.wj.service.BookService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.lang.StringUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -27,12 +30,16 @@ public class LibraryController {
     @ApiOperation(value = "列表")
     @PostMapping("/books")
     public Result list(@RequestBody Book book) throws Exception {
-        return ResultFactory.buildResult(ResultCode.SUCCESS,"操作成功",bookService.bookList(book));
+        List<Book> books = bookService.bookList(book);
+        return ResultFactory.buildResult(ResultCode.SUCCESS,"操作成功",books);
     }
 
     @ApiOperation(value = "添加或修改")
     @PostMapping("/saveBooks")
     public Result addOrUpdate(@RequestBody Book book) throws Exception {
+        if(!StringUtils.isBlank(book.getTitle())){
+            return ResultFactory.buildResult(ResultCode.FAIL,"书名不能为空","");
+        }
         Integer result = bookService.saveBook(book);
         if(result > 0){
             return ResultFactory.buildResult(ResultCode.SUCCESS,"操作成功","");
@@ -117,6 +124,11 @@ public class LibraryController {
         return ResultFactory.buildResult(ResultCode.SUCCESS,"ok",categoryList);
     }
 
+    @ApiOperation(value = "图书分类列表")
+    @GetMapping("/ttest/{id}/{name}")
+    public Result teest(@PathVariable String id,@PathVariable String name) throws Exception {
 
+        return ResultFactory.buildResult(ResultCode.SUCCESS,"ok",id + name);
+    }
 
 }

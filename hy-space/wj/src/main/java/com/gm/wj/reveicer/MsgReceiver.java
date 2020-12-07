@@ -1,7 +1,14 @@
 package com.gm.wj.reveicer;
 
+import com.alibaba.fastjson.JSON;
+import com.gm.wj.config.RabbitConfig;
+import com.gm.wj.entity.User;
 import com.gm.wj.utils.RabbitConnectUtil;
 import com.rabbitmq.client.*;
+import lombok.SneakyThrows;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.ConnectionUtils;
 import org.springframework.stereotype.Component;
@@ -10,28 +17,20 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 @Component
-public class MsgReceiver {
 
-    @Autowired
-    private RabbitConnectUtil rabbitConnectUtil;
+public class MsgReceiver  {
 
-    public void receive() throws IOException, TimeoutException {
-        //获取连接
-        Connection connection = rabbitConnectUtil.getConnection();
 
-        //创建频道
-        Channel channel = connection.createChannel();
+    //@RabbitListener(queues = RabbitConfig.queueName)
+    public void receive(String content,Channel channel, Message message) throws IOException {
+        System.out.println("消息接收"+content);
+        User user = JSON.parseObject(content,User.class);
+        channel.confirmSelect();
+        if(user.getUsername().contains("7")){
+            channel.basicNack(message.getMessageProperties().getDeliveryTag(),false,true);
+        }
 
-        //定义队列的消费者
-        Consumer consumer = new DefaultConsumer(channel) {
-            @Override
-            public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
-                    throws IOException {
-                String message = new String(body, "UTF-8");
-                System.out.println("接收到一个消息： " + message);
-            }
-        };
-
-        channel.basicConsume("QUEUEA", true, consumer);
     }
+
+
 }

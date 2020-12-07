@@ -203,7 +203,7 @@ export default {
   }
 
   #poster {
-   /* background:url("../assets/gelei/1.png") no-repeat;*/
+    background:url("../assets/gelei/1.png") no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
