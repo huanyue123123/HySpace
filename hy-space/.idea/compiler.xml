@@ -12,6 +12,7 @@
         <module name="space-server" />
         <module name="space-page-client" />
         <module name="wj" />
+        <module name="video" />
         <module name="space-user-client" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="space-server" options="-parameters" />
       <module name="space-user-client" options="-parameters" />
       <module name="user-manage" options="-parameters" />
+      <module name="video" options="-parameters" />
       <module name="wj" options="-parameters" />
     </option>
   </component>

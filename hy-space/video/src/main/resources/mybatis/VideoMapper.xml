@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huanyue.video.mapper.VideoMapper">
+	<resultMap id="BaseResultMap" type="com.huanyue.video.entity.Video">
+            <result column="id" property="id" />
+	        <result column="title" property="title" />
+	        <result column="class_id" property="classId" />
+	        <result column="class_title" property="classTitle" />
+	        <result column="path" property="path" />
+	        <result column="text" property="text" />
+	        <result column="video_title" property="videoTitle" />
+	        <result column="menu_id" property="menuId" />
+		</resultMap>  
+    
+    <!-- 表字段 -->
+    <sql id="baseColumns">
+         t.id
+        , t.title
+        , t.class_id
+        , t.class_title
+        , t.path
+        , t.text
+        , t.video_title
+        , t.menu_id
+        </sql> 
+    
+    <!-- 查询全部 -->
+    <select id="listAll" resultMap="BaseResultMap">
+		SELECT         
+        	<include refid="baseColumns" />
+		FROM video t
+	</select>
+    
+     <!-- 分页查询 -->
+    <select id="listPage" resultMap="BaseResultMap">
+		SELECT         
+        	<include refid="baseColumns" />
+		FROM video t
+        LIMIT
+            #{pageStartIndex} ,#{pageSize}
+	</select>
+ 
+ 	<!-- 根据主键获取单条记录 -->
+    <select id="getById" resultMap="BaseResultMap" parameterType="Integer">
+		SELECT         
+        	<include refid="baseColumns" />
+		FROM video t
+		WHERE id = #{id}
+	</select>
+
+	<!-- 插入全部字段 -->
+    <insert id="insert" parameterType="com.huanyue.video.entity.Video"
+		keyProperty="id" keyColumn="id" useGeneratedKeys="true"
+    >
+	INSERT INTO video
+    <trim prefix="(" suffix=")" suffixOverrides=",">	 
+        	        	    	title,
+    	        	    	class_id,
+    	        	    	class_title,
+    	        	    	path,
+    	        	    	text,
+    	        	    	video_title,
+    	        	    	menu_id,
+    	        </trim>
+    <trim prefix="VALUES (" suffix=")" suffixOverrides=",">            
+        	        	        #{title},                   
+    	        	        #{classId},                   
+    	        	        #{classTitle},                   
+    	        	        #{path},                   
+    	        	        #{text},                   
+    	        	        #{videoTitle},                   
+    	        	        #{menuId},                   
+    	        </trim>
+	</insert>
+    
+    <!-- 插入不为NULL的字段 -->
+    <insert id="insertIgnoreNull" parameterType="com.huanyue.video.entity.Video"
+        keyProperty="id" keyColumn="id" useGeneratedKeys="true"
+        >
+        INSERT INTO video    
+        <trim prefix="(" suffix=")" suffixOverrides=",">	 
+
+                                                                            <if test="title != null">
+                   title,
+                    </if>
+                                                                <if test="classId != null">
+                   class_id,
+                    </if>
+                                                                <if test="classTitle != null">
+                   class_title,
+                    </if>
+                                                                <if test="path != null">
+                   path,
+                    </if>
+                                                                <if test="text != null">
+                   text,
+                    </if>
+                                                                <if test="videoTitle != null">
+                   video_title,
+                    </if>
+                                                                <if test="menuId != null">
+                   menu_id,
+                    </if>
+                                    </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">            
+                                                                            <if test="title != null" >
+                    #{title},                    
+                    </if>
+                                                                <if test="classId != null" >
+                    #{classId},                    
+                    </if>
+                                                                <if test="classTitle != null" >
+                    #{classTitle},                    
+                    </if>
+                                                                <if test="path != null" >
+                    #{path},                    
+                    </if>
+                                                                <if test="text != null" >
+                    #{text},                    
+                    </if>
+                                                                <if test="videoTitle != null" >
+                    #{videoTitle},                    
+                    </if>
+                                                                <if test="menuId != null" >
+                    #{menuId},                    
+                    </if>
+                                    </trim>
+    </insert>
+
+	<!-- 更新,更新全部字段 -->
+    <update id="update" parameterType="com.huanyue.video.entity.Video">
+    UPDATE video
+     <set>		
+                                     title=#{title},        
+                                class_id=#{classId},        
+                                class_title=#{classTitle},        
+                                path=#{path},        
+                                text=#{text},        
+                                video_title=#{videoTitle},        
+                                menu_id=#{menuId},        
+                   </set>	
+    WHERE id = #{id}
+    </update>  
+    
+    
+    <!-- 更新不为NULL的字段 -->
+    <update id="updateIgnoreNull" parameterType="com.huanyue.video.entity.Video">
+    UPDATE video
+    <set>
+    	                                                <if test="title != null" >
+                title=#{title},                 
+                </if>
+                                                <if test="classId != null" >
+                class_id=#{classId},                 
+                </if>
+                                                <if test="classTitle != null" >
+                class_title=#{classTitle},                 
+                </if>
+                                                <if test="path != null" >
+                path=#{path},                 
+                </if>
+                                                <if test="text != null" >
+                text=#{text},                 
+                </if>
+                                                <if test="videoTitle != null" >
+                video_title=#{videoTitle},                 
+                </if>
+                                                <if test="menuId != null" >
+                menu_id=#{menuId},                 
+                </if>
+                        </set>
+    WHERE id = #{id}
+    </update>
+
+		
+	<!-- 根据主键删除记录 -->
+	<delete id="delete" parameterType="com.huanyue.video.entity.Video">
+		UPDATE video
+		SET is_deleted=1
+		WHERE id = #{id}
+	</delete>
+
+
+</mapper>

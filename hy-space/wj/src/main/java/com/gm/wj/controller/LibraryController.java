@@ -19,7 +19,7 @@ import sun.misc.BASE64Encoder;
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
-@Api(description = "图书管理")
+@Api(tags = "图书管理")
 @RestController
 @RequestMapping("/api")
 public class LibraryController {
